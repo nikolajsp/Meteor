@@ -1,0 +1,14 @@
+
+<ul>
+  <li ng-repeat="party in parties">
+ {{party.name}}
+
+
+  </li>
+</ul>
+<form>
+    <label>Message</label>
+    <input ng-model="newParty.name">
+    <button ng-click="parties.push(newParty)">Add</button>
+    <button ng-click="removeAll()">Remove All</button>
+</form>
